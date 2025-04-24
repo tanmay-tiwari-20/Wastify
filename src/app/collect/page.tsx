@@ -232,7 +232,7 @@ export default function CollectPage() {
       } catch (error) {
         console.error("Error verifying waste:", error);
         retries++;
-        await new Promise((resolve) => setTimeout(resolve, 2 ** retries * 100)); // Exponential Backoff
+        await new Promise((resolve) => setTimeout(resolve, 2 ** retries)); // Exponential Backoff
       }
     }
 

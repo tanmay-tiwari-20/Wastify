@@ -112,7 +112,6 @@ export default function Header({ onMenuClick, totalEarnings }: HeaderProps) {
           {isMobile && (
             <motion.div whileTap={{ scale: 0.9 }}>
               <Button variant="ghost" size="icon">
-                <Search className="h-5 w-5" />
               </Button>
             </motion.div>
           )}
